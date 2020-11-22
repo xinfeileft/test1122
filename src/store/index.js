@@ -3,12 +3,7 @@ import { createStore } from 'vuex'
 export default createStore({
   state: {
     counter:100,
-    stu: [
-      { name: '小华', sex: '男', age: 19 },
-      { name: '小红', sex: '女', age: 18 },
-      { name: '小淘气', sex: '男', age: 15 },
-      { name: '小明', sex: '男', age: 20 },
-    ]
+    stu: [12,52,14,85,62,110,54]
   },
   mutations: {
   },
@@ -16,8 +11,8 @@ export default createStore({
        
   },
   getters:{
-       more17Stu() {
-         return this.stu.age.filter(age => age > 17)
+       more17Stu(state) {
+         return  state.stu.filter(s=>s.age>17);
     }
   },
   modules: {

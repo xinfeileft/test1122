@@ -4,7 +4,7 @@
     <h2>{{$store.state.counter}}</h2>
       <button @click="add">增加1</button>&nbsp; &nbsp;&nbsp;
       <button @click="sub">减小1</button> 
-      <h2>{{this.$store.getters.more17Stu}}</h2>
+      <h2>{{ $store.getters.more17Stu}}</h2>
   </div>
 </template>
 
